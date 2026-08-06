@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0F172A] text-[#E2E8F0] antialiased selection:bg-blue-500/30 selection:text-blue-200;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .glass-card:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .input-focus:focus {
+    outline: none;
+    border-color: #3B82F6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  }
+  
+  .accent-blue { color: #3B82F6; }
+  .accent-green { color: #22C55E; }
+  .accent-yellow { color: #FACC15; }
+  .accent-red { color: #EF4444; }
+  
+  .bg-blue { background-color: #3B82F6; }
+  .bg-green { background-color: #22C55E; }
+  .bg-yellow { background-color: #FACC15; }
+  .bg-red { background-color: #EF4444; }
+}

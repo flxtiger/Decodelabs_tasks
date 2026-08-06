@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  @apply bg-slate-900 text-slate-100 min-h-screen overflow-x-hidden;
+}
+
+/* Custom Scrollbar for cyber theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3B82F6; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00E5FF; 
+}
+
+::selection {
+  background: rgba(0, 229, 255, 0.3);
+  color: #fff;
+}
