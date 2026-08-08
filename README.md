@@ -68,7 +68,9 @@ A cybersecurity awareness project explaining phishing attacks.
 Decodelabs_tasks/
 
 ├── Task-1-Secure-Password-Strength-Analyzer
+
 ├── Task-2-Basic-Encryption-Decryption
+
 ├── Task-3-Phishing-Awareness-Analysis
 
 
